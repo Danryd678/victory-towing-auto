@@ -3,84 +3,157 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Victory Towing &amp; Auto LLC — Snellville, GA</title>
-<meta name="description" content="Victory Towing & Auto LLC — motor vehicle towing in Snellville, Georgia. Registered business details, phone and address.">
+<title>Victory Towing &amp; Auto LLC — Towing in Snellville, GA</title>
+<meta name="description" content="Victory Towing & Auto LLC — emergency towing, junk car removal and roadside assistance in Snellville, Georgia. Call (404) 957-6080.">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #121417; color: #f2f4f6; line-height: 1.6; }
-  a { color: #f5b301; }
-  .notice { background: #f5b301; color: #191919; text-align: center; font-size: 13px; font-weight: 600; padding: 8px 14px; }
-  header { background: linear-gradient(135deg, #1c1f24 0%, #2a2e35 100%); border-bottom: 4px solid #f5b301; padding: 38px 20px 30px; text-align: center; }
-  header .badge { display: inline-block; background: #f5b301; color: #191919; font-size: 12px; font-weight: 700; letter-spacing: 1px; padding: 4px 12px; border-radius: 20px; margin-bottom: 14px; }
-  header h1 { font-size: 30px; line-height: 1.2; }
-  header h1 span { color: #f5b301; }
-  header p { color: #b9c0c8; margin-top: 8px; font-size: 15px; }
-  .wrap { max-width: 640px; margin: 0 auto; padding: 0 18px 40px; }
-  .call-box { display: flex; gap: 10px; margin: 22px 0; }
-  .btn { flex: 1; display: block; text-align: center; text-decoration: none; font-weight: 700; font-size: 16px; padding: 14px 10px; border-radius: 10px; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: #101215; color: #f2f4f6; line-height: 1.6; }
+  a { color: #f5b301; text-decoration: none; }
+
+  /* Top bar */
+  .topbar { background: #f5b301; color: #191919; text-align: center; font-size: 14px; font-weight: 700; padding: 9px 14px; }
+  .topbar a { color: #191919; }
+
+  /* Nav */
+  nav { position: sticky; top: 0; z-index: 10; background: rgba(16,18,21,.96); border-bottom: 1px solid #262b31; display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; }
+  .logo { font-weight: 800; font-size: 17px; letter-spacing: .5px; }
+  .logo span { color: #f5b301; }
+  .logo small { display: block; font-size: 10px; font-weight: 600; letter-spacing: 2px; color: #9aa4ae; }
+  .nav-call { background: #f5b301; color: #191919; font-weight: 700; font-size: 14px; padding: 9px 16px; border-radius: 8px; }
+
+  /* Hero */
+  .hero { background: linear-gradient(160deg, #1d2126 0%, #121417 60%), radial-gradient(circle at 80% 0%, rgba(245,179,1,.18), transparent 55%); padding: 54px 20px 46px; text-align: center; border-bottom: 4px solid #f5b301; }
+  .hero .eyebrow { display: inline-block; background: rgba(245,179,1,.14); color: #f5b301; border: 1px solid rgba(245,179,1,.4); font-size: 12px; font-weight: 700; letter-spacing: 1.5px; padding: 5px 14px; border-radius: 20px; margin-bottom: 16px; }
+  .hero h1 { font-size: 34px; line-height: 1.15; max-width: 560px; margin: 0 auto 12px; }
+  .hero h1 span { color: #f5b301; }
+  .hero p { color: #b9c0c8; font-size: 16px; max-width: 480px; margin: 0 auto 24px; }
+  .hero-btns { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; font-weight: 700; font-size: 16px; padding: 14px 24px; border-radius: 10px; }
   .btn-call { background: #f5b301; color: #191919; }
-  .btn-dir { background: #23272d; color: #f2f4f6; border: 1px solid #3a4048; }
-  section { background: #1b1e22; border: 1px solid #2b3036; border-radius: 12px; padding: 20px; margin-bottom: 16px; }
-  section h2 { font-size: 17px; color: #f5b301; margin-bottom: 12px; letter-spacing: .4px; }
-  .kv { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-bottom: 1px solid #262b31; font-size: 14px; }
-  .kv:last-child { border-bottom: none; }
-  .kv b { color: #9aa4ae; font-weight: 600; white-space: nowrap; }
-  .kv span { text-align: right; }
-  .pill { display: inline-block; background: #173d2b; color: #4ade80; font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 20px; }
-  ul.services { list-style: none; }
-  ul.services li { padding: 8px 0 8px 28px; position: relative; border-bottom: 1px solid #262b31; font-size: 15px; }
-  ul.services li:last-child { border-bottom: none; }
-  ul.services li::before { content: "🚛"; position: absolute; left: 0; top: 8px; }
-  footer { text-align: center; color: #7d858e; font-size: 12px; padding: 10px 18px 30px; line-height: 1.7; }
+  .btn-ghost { background: transparent; color: #f2f4f6; border: 1px solid #3a4048; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 18px 48px; }
+
+  /* Trust strip */
+  .trust { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 26px 0 8px; text-align: center; }
+  .trust div { background: #1b1e22; border: 1px solid #2b3036; border-radius: 10px; padding: 14px 8px; font-size: 13px; font-weight: 600; color: #d5dbe0; }
+  .trust div b { display: block; font-size: 20px; margin-bottom: 2px; }
+
+  section { margin-top: 34px; }
+  section h2 { font-size: 22px; margin-bottom: 4px; }
+  section h2 span { color: #f5b301; }
+  .sub { color: #9aa4ae; font-size: 14px; margin-bottom: 16px; }
+
+  /* Service cards */
+  .cards { display: grid; gap: 12px; }
+  .card { background: #1b1e22; border: 1px solid #2b3036; border-radius: 12px; padding: 20px; }
+  .card .icon { font-size: 26px; }
+  .card h3 { font-size: 17px; margin: 8px 0 4px; }
+  .card p { color: #b9c0c8; font-size: 14px; }
+
+  /* Steps */
+  .steps { counter-reset: step; display: grid; gap: 12px; }
+  .step { display: flex; gap: 14px; background: #1b1e22; border: 1px solid #2b3036; border-radius: 12px; padding: 16px 18px; align-items: flex-start; }
+  .step .num { flex: 0 0 34px; height: 34px; border-radius: 50%; background: #f5b301; color: #191919; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  .step h3 { font-size: 16px; margin-bottom: 2px; }
+  .step p { color: #b9c0c8; font-size: 14px; }
+
+  /* Contact */
+  .contact { background: #1b1e22; border: 1px solid #2b3036; border-radius: 12px; padding: 22px 20px; }
+  .contact .row { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #262b31; font-size: 15px; }
+  .contact .row:last-child { border-bottom: none; }
+  .contact .row b { color: #9aa4ae; font-weight: 600; white-space: nowrap; }
+  .contact .row span { text-align: right; }
+  .contact .btn { display: block; text-align: center; margin-top: 16px; }
+
+  footer { text-align: center; color: #7d858e; font-size: 12px; padding: 26px 18px 34px; line-height: 1.8; border-top: 1px solid #262b31; }
+  footer .made { color: #5c636b; }
 </style>
 </head>
 <body>
-<div class="notice">Unofficial information page — created by family. This is not the business&rsquo;s official website.</div>
-<header>
-  <div class="badge">SNELLVILLE, GEORGIA</div>
-  <h1>Victory Towing <span>&amp; Auto LLC</span></h1>
-  <p>Motor vehicle towing &amp; junk car removal — serving Snellville and the Metro Atlanta area.</p>
-</header>
+
+<div class="topbar">Need a tow right now? <a href="tel:+14049576080">Call (404) 957-6080</a></div>
+
+<nav>
+  <div class="logo">VICTORY <span>TOWING</span><small>&amp; AUTO LLC</small></div>
+  <a class="nav-call" href="tel:+14049576080">📞 Call Now</a>
+</nav>
+
+<div class="hero">
+  <div class="eyebrow">SNELLVILLE, GEORGIA</div>
+  <h1>Stranded? <span>We&rsquo;ll Get You Moving.</span></h1>
+  <p>Fast, careful towing and roadside help in Snellville and the surrounding area. One call and we&rsquo;re on our way.</p>
+  <div class="hero-btns">
+    <a class="btn btn-call" href="tel:+14049576080">📞 (404) 957-6080</a>
+    <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=3988+Ash+Tree+St,+Snellville,+GA+30039">📍 Get Directions</a>
+  </div>
+</div>
 
 <div class="wrap">
-  <div class="call-box">
-    <a class="btn btn-call" href="tel:+14049576080">📞 Call (404) 957-6080</a>
-    <a class="btn btn-dir" href="https://www.google.com/maps/search/?api=1&amp;query=3988+Ash+Tree+St,+Snellville,+GA+30039">📍 Directions</a>
+
+  <div class="trust">
+    <div><b>🚛</b>Local Company</div>
+    <div><b>⚡</b>Fast Response</div>
+    <div><b>🤝</b>Careful Handling</div>
   </div>
 
   <section>
-    <h2>Services</h2>
-    <ul class="services">
-      <li>Emergency motor vehicle towing</li>
-      <li>Vehicle removal &amp; junk car pickup</li>
-      <li>Roadside assistance</li>
-    </ul>
+    <h2>Our <span>Services</span></h2>
+    <p class="sub">Whatever happened to your vehicle, we can help.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🚛</div>
+        <h3>Emergency Towing</h3>
+        <p>Your car broke down or had an accident? We tow it safely to your home, your mechanic, or wherever it needs to go.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🚗</div>
+        <h3>Junk Car Removal</h3>
+        <p>Old, damaged or unwanted vehicle taking up space? We pick it up and take it away — quick and hassle-free.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔧</div>
+        <h3>Roadside Assistance</h3>
+        <p>Stuck on the side of the road? Call us and we&rsquo;ll come to you and get you moving again.</p>
+      </div>
+    </div>
   </section>
 
   <section>
-    <h2>Business Details</h2>
-    <div class="kv"><b>Business Name</b><span>Victory Towing &amp; Auto LLC</span></div>
-    <div class="kv"><b>Control Number</b><span>20030908</span></div>
-    <div class="kv"><b>Status</b><span><span class="pill">● Active / Compliance</span></span></div>
-    <div class="kv"><b>Formed</b><span>25 February 2020</span></div>
-    <div class="kv"><b>Business Type</b><span>Domestic LLC — Georgia</span></div>
-    <div class="kv"><b>Industry</b><span>Motor Vehicle Towing</span></div>
-    <div class="kv"><b>Registered Agent</b><span>Sunday Thomas</span></div>
-    <div class="kv"><b>Last Registration</b><span>2026</span></div>
+    <h2>How It <span>Works</span></h2>
+    <p class="sub">Three simple steps.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <div><h3>Call us</h3><p>Tell us where you are and what happened to your vehicle.</p></div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div><h3>We come to you</h3><p>Our truck heads straight to your location in Snellville or nearby.</p></div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div><h3>You&rsquo;re on your way</h3><p>Your vehicle is loaded carefully and taken where it needs to go.</p></div>
+      </div>
+    </div>
   </section>
 
   <section>
-    <h2>Find Us</h2>
-    <div class="kv"><b>Address</b><span>3988 Ash Tree St<br>Snellville, GA 30039, USA</span></div>
-    <div class="kv"><b>County</b><span>Gwinnett</span></div>
-    <div class="kv"><b>Phone</b><span><a href="tel:+14049576080">(404) 957-6080</a></span></div>
+    <h2>Contact <span>Us</span></h2>
+    <p class="sub">Serving Snellville and surrounding areas.</p>
+    <div class="contact">
+      <div class="row"><b>Phone</b><span><a href="tel:+14049576080">(404) 957-6080</a></span></div>
+      <div class="row"><b>Address</b><span>3988 Ash Tree St<br>Snellville, GA 30039, USA</span></div>
+      <a class="btn btn-call" href="tel:+14049576080">📞 Call (404) 957-6080</a>
+    </div>
   </section>
+
 </div>
 
 <footer>
-  Business details from the official Georgia Secretary of State record<br>
-  (Corporations Division, ecorp.sos.ga.gov).<br>
-  This page is an unofficial family information page, not the business&rsquo;s official website.
+  &copy; 2026 Victory Towing &amp; Auto LLC — Snellville, GA<br>
+  <span class="made">Made with ❤️ by family</span>
 </footer>
+
 </body>
 </html>
